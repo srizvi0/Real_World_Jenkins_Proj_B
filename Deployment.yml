@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deplo1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: key1
+  template:
+    metadata:
+      labels:
+        app: key1
+    spec:
+      containers:
+      - name: container1
+        image: najamrizvi3/real_world_jenkins_projb:latest
+        ports:
+        - containerPort: 80
