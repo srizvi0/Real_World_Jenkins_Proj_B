@@ -1,3 +1,3 @@
-CICD pipeline of java application to Kubernetes.
+CI pipeline of java application
 
 
